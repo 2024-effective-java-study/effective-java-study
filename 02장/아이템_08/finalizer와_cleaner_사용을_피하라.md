@@ -97,7 +97,7 @@ public class Main {
 }
 ```
 
-1. final 클래스는 하위 클래스를 만들 수 없으니 안전하지만, final이 아닌 클래스라면 아무 일도 하지 않는 finalize 메서드를 만들고 final로 선언해야 한다.
+2. final 클래스는 하위 클래스를 만들 수 없으니 안전하지만, final이 아닌 클래스라면 아무 일도 하지 않는 finalize 메서드를 만들고 final로 선언해야 한다.
 
 ```java
 @Override
@@ -118,7 +118,7 @@ public class Sample implements AutoCloseable {
 }
 ```
 
-1. 예외가 발생해도 제대로 종료되도록 try-with-resources 를 사용한다.
+2. 예외가 발생해도 제대로 종료되도록 try-with-resources 를 사용한다.
 
 ## finalizer와 cleaner의 적절한 사용법
 
@@ -179,4 +179,4 @@ public static void main(final String[] args) {
 }
 ```
 
-1. 네이티브 피어란 일반 자바 객체가 네이티브 메서드를 통해 기능을 위임한 네이티브 객체를 말한다. 그 결과 자바 피어를 회수할 때 네이티브 객체까지 회수하지 못 한다. 성능 저하를 감당할 수 없거나 자원을 즉시 회수해야 한다면 close 메서드를 사용해야 한다.
+2. 네이티브 피어란 일반 자바 객체가 네이티브 메서드를 통해 기능을 위임한 네이티브 객체를 말한다. 그 결과 자바 피어를 회수할 때 네이티브 객체까지 회수하지 못 한다. 성능 저하를 감당할 수 없거나 자원을 즉시 회수해야 한다면 close 메서드를 사용해야 한다.
