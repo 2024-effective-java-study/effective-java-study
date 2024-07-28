@@ -16,7 +16,7 @@
 6. [불필요한 객체 생성을 피하라](02장/아이템_06/불필요한_객체_생성을_피하라.md)
 7. [다 쓴 객체 참조를 해제하라](02장/아이템_07/다_쓴_객체_참조를_해제하라.md)
 8. [finalizer와 cleaner 사용을 피하라](02장/아이템_08/finalizer와_cleaner_사용을_피하라.md)
-9. try-finally보다는 try-with-resources를 사용하라
+9. [try-finally보다는 try-with-resources를 사용하라](02장/아이템_09/try_finally보다는%20_try-with-resources를_사용하라.md)
 10. equals는 일반 규약을 지켜 재정의하라
 11. equals를 재정의하려거든 hashCode도 재정의하라
 12. toString을 항상 재정의하라
