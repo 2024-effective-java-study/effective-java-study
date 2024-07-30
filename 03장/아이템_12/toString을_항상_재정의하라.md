@@ -9,11 +9,11 @@
 
 ### toString을 재정의하지 않은 예시
 
-![with_toString.png](with_toString.png)
+![without_toString.png](without_toString.png)
 
 ### toString을 재정의한다면?
 
-![without_toString.png](without_toString.png)
+![with_toString.png](with_toString.png)
 
 ## 어떻게 재정의해야 하는가?
 
