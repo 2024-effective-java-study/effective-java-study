@@ -218,34 +218,12 @@ public static void swap2(List<?> list, int i, int j)       // 와일드카드
 
 
 ### 이유 설명
-어떤 리스트든 이 메서드에 넘기면 명시한 인덱스의 원소들을 교환해주기 때문입니다.
-```java
-public class SwapExample {
-// 제네릭 타입 매개변수 사용
-public static <E> void swap(List<E> list, int i, int j) {
-E temp = list.get(i);
-list.set(i, list.get(j));
-list.set(j, temp);
-}
+* 어떤 리스트든 이 메서드에 넘기면 명시한 인덱스의 원소들을 교환해주기 때문입니다.
+* 신경 써야 할 타입 매개변수가 없다.
 
-    public static void main(String[] args) {
-        // List<Integer> 타입의 리스트
-        List<Integer> intList = new ArrayList<>(Arrays.asList(1, 2, 3));
-        swap(intList, 0, 2); // E는 Integer로 결정됨
-        System.out.println("Swapped intList: " + intList);
+### 기본 규칙
+**메서드 선언에 타입 매개변수가 한번만 나오면 와일드 카드로 대체하라.**
 
-        // List<String> 타입의 리스트
-        List<String> stringList = new ArrayList<>(Arrays.asList("one", "two", "three"));
-        swap(stringList, 0, 2); // E는 String으로 결정됨
-        System.out.println("Swapped stringList: " + stringList);
-
-        // 아래 코드는 컴파일 오류가 발생합니다.
-        // List<Number> numberList = Arrays.asList(1, 2.5, 3);
-        // swap(numberList, 0, 2); // 컴파일 오류 발생
-    }
-}
-```
-<br>
 
 하지만, 두 번째 swap 선언에는 문제가 하나 있는데, 다음과 같이 구현한 코드가 컴파일되지 않는다는 점입니다.
 
