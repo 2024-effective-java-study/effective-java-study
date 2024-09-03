@@ -32,4 +32,4 @@ public enum Ensemble {
     public int numboerOfMusicians() { return numberOfMusicians; }
 }
 ```
-위의 코드는 ordinal 메서드를 사용하지 않고, 인스턴스 필드에 인원 수를 저장하여 중복된 값(12)를 저장할 수 있게 되었다.
+위의 코드는 ordinal 메서드를 사용하지 않고, 인스턴스 필드에 인원 수를 저장하여 중복된 값(8)를 저장할 수 있게 되었다.
